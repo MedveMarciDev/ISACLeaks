@@ -1,0 +1,1 @@
+-Az env file elé rakj egy .-ot
