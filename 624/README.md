@@ -1,3 +1,3 @@
 # SCP-624
 
--ZeneBot
+-Az env file elé rakj egy .-ot
