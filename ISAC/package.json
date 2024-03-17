@@ -1,0 +1,39 @@
+{
+    "name": "isac",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "debug": "nodemon -e js,ts --watch src --exec \"npm run build:ts && npx prisma db push && npm run start:app\"",
+        "build:ts": "tsc.cmd",
+        "start:app": "node dist/index.js",
+        "start": "npm run debug"
+    },
+    "type": "commonjs",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@discordjs/rest": "^1.1.0",
+        "@prisma/client": "^4.11.0",
+        "discord.js": "^14.11.0",
+        "dotenv": "^16.0.3",
+        "emojilib": "^3.0.8",
+        "git-last-commit": "^1.0.1",
+        "mysql2": "^2.3.3",
+        "nodemon": "^2.0.15",
+        "parse-duration": "^1.0.2",
+        "quickchart-js": "^3.1.2",
+        "readline": "^1.3.0",
+        "typescript": "^4.5.4",
+        "undici": "^5.10.0",
+        "uuid": "^9.0.0"
+    },
+    "prisma": {
+        "schema": "prisma/schema.prisma"
+    },
+    "devDependencies": {
+        "@types/uuid": "^9.0.0",
+        "prisma": "^4.11.0"
+    }
+}

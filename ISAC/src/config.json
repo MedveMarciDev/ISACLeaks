@@ -1,0 +1,596 @@
+{
+    "joinImage": "https://i.imgur.com/mQighRb.png",
+    "ISAC": "Improved Server Authentication Core",
+    "endOfStackTrace": "--------------- End of stack trace ---------------",
+    "channels": {
+        "joins": "792815028918550569",
+        "errorLog": "937367586520326216",
+        "roleModificationLog": "1056684514992201729",
+        "boosts": "792815028918550569",
+        "deletedMessages": "1056684045624418344",
+        "messageEdits": "1056684045624418344",
+        "reactions": "1056684045624418344",
+        "newAccountWarnChannel": "845330410552557659",
+        "info": "844324717699268609",
+        "loggerIgnored": [
+            "863448903776993280",
+            "827845467345911818",
+            "809529649209278514",
+            "582257250995798053",
+            "1075734778357235762",
+            "1016333070611271810",
+            "1016332962406604820",
+            "1016332832257355946",
+            "856212654800764929",
+            "856235076060053504",
+            "896691122791915530",
+            "844255555975249931",
+            "1086019330707300504",
+            "1086019617065009234",
+            "1086019843419029524",
+            "1088151763858759820",
+            "1147104286078156832"
+        ]
+    },
+    "boost": {
+        "messages": [
+            {
+                "title": "Nagy pacsi",
+                "details": "köszönjük a szerver boostot!"
+            },
+            {
+                "title": "Szép napot",
+                "details": "köszönjük a szerver boostot!"
+            },
+            {
+                "title": "Köszönjük a boostot",
+                "details": "légy áldott lélek!"
+            },
+            {
+                "title": "Köszönjük a szerver boostot",
+                "details": "ő már biztos nem sus!"
+            }
+        ]
+    },
+    "roleSelection": {
+        "options": [
+            {
+                "name": "Mini Bejelentés",
+                "id": "948251607714373742",
+                "description": "Kisebb bejelentésekről való értesítés."
+            },
+            {
+                "name": "Event",
+                "id": "948251726765523034",
+                "description": "Eventekről való értesítés."
+            },
+            {
+                "name": "Staff Hírek",
+                "id": "1131263122213195886",
+                "description": "Staffokról való értesítés."
+            }
+        ],
+        "channel": "948250359527260161",
+        "embed": {
+            "title": "Rangkérés",
+            "body": "A lenti listára kattintva tudsz rangot kérni magadra.",
+            "color": "#7289da"
+        },
+        "buttonText": "Rangok kérése",
+        "menuText": "Választható rangok"
+    },
+    "commandBypass": [
+        {
+            "id": "435474959595208704",
+            "perms": [
+                "*"
+            ]
+        },
+        {
+            "id": "584098275355918336",
+            "perms": [
+                "*"
+            ]
+        }
+    ],
+    "autoVote": {
+        "upvote": "upvote",
+        "downvote": "downvote",
+        "textChannels": [
+            "834702675349864479"
+        ],
+        "forums": [
+            "1076272444203094108",
+            "1019666086578368512"
+        ]
+    },
+    "muteOptions": {
+        "role": "731867990542385283",
+        "logChannel": "802975205680218113"
+    },
+    "wordFiltering": {
+        "enabled": true,
+        "delete": false,
+        "wordList": [
+            "nigger",
+            "kurva",
+            "sex",
+            "nigg"
+        ],
+        "ignoredChannels": [
+            "582257250995798053",
+            "827845467345911818",
+            "809529649209278514",
+            "863448903776993280",
+            "871065364736405514",
+            "844255555975249931",
+            "856212654800764929",
+            "856235076060053504",
+            "896691122791915530",
+            "1062421992780877915",
+            "1086019330707300504",
+            "1086019617065009234",
+            "1086019843419029524",
+            "1088151763858759820",
+            "1066350899024367626",
+            "1068162854429134879"
+        ],
+        "ignoredRoles": [
+            "572134789751111756"
+        ],
+        "logChannel": "845330410552557659"
+    },
+    "goodTry": [
+        "mateksus",
+        "mateksas",
+        "mateksos",
+        "matekszusz",
+        "mateksusz",
+        "matekszus",
+        "susmatek",
+        "szuszmatek"
+    ],
+    "nameFiltering": {
+        "enabled": false,
+        "kick": false,
+        "logChannel": "845330410552557659",
+        "nameList": [
+            "",
+            ""
+        ]
+    },
+    "goodTryRegex": " ,.'˛ˇ˘`˙˝¨¸°\\-=_/\\\\",
+    "serverStatus": {
+        "updateMinutes": 1,
+        "IP": "87.229.85.207",
+        "channel": "844323788266668052",
+        "staffPlayerList": "1112718850912440371",
+        "id": "21516",
+        "servers": [
+            {
+                "id": 56028,
+                "name": "54-es Körzet",
+                "color": "#fff000",
+                "image": "https://i.imgur.com/5wWC8Ck.png"
+            },
+            {
+                "id": 68056,
+                "name": "56-os Körzet",
+                "color": "#29eede",
+                "image": "https://i.imgur.com/sUq48hj.png"
+            },
+            {
+                "id": 56027,
+                "name": "62-es Körzet",
+                "color": "#de3163",
+                "image": "https://i.imgur.com/AEwutVF.png",
+                "typeOverride": "Normál (Vanilla)"
+            },
+            {
+                "id": 61173,
+                "name": "58-as Körzet",
+                "color": "#ff0000",
+                "image": "https://i.imgur.com/F8Tgey5.png"
+            }
+        ],
+        "associations": [
+            {
+                "server": "54-es Körzet",
+                "role": "689031594748543017"
+            },
+            {
+                "server": "56-os Körzet",
+                "role": "811186557084106762"
+            },
+            {
+                "server": "58-as Körzet",
+                "role": "702499896443404318"
+            },
+            {
+                "server": "62-es Körzet",
+                "role": "874334361489649734"
+            }
+        ],
+        "friendlyFireEmoji": "crossed_swords",
+        "staffRanks": [
+            "owner",
+            "coowner",
+            "community",
+            "human",
+            "admin",
+            "hmoderator",
+            "moderator"
+        ]
+    },
+    "ticketCategory": "847863599652536350",
+    "tickets": [
+        {
+            "id": "tech",
+            "channelName": "isac-ts",
+            "log": {
+                "channel": "846406322567249920",
+                "embedTitle": "Tech Support Ticket Log",
+                "embedColor": "#008f1e"
+            },
+            "initialization": {
+                "channel": "846398071185211443",
+                "embed": {
+                    "title": "Tech Support",
+                    "color": "#008f1e",
+                    "body": "Amennyiben a játékod nem megfelelően fut, vagy más problémába ütköztél a gépeden, nyiss egy jegyet."
+                },
+                "blacklistedRoles": [
+                    "731867990542385283"
+                ],
+                "emoji": "wrench"
+            },
+            "creation": {
+                "pingRoles": [
+                    "818914190009827338",
+                    "739474810249281646"
+                ],
+                "pingRolesHidden": [],
+                "rolesWithAccess": [
+                    "818914190009827338",
+                    "739474810249281646",
+                    "739583249721851905"
+                ],
+                "embed": {
+                    "title": "Tech Support",
+                    "body": "Egy Staff Tag hamarosan segít neked!",
+                    "color": "#2ECC71"
+                },
+                "description": "Hardveres/szoftveres problémákkal kapcsolatos segítségkérés (pl. nem észleli a játék a mikrofont)"
+            }
+        },
+        {
+            "id": "pj",
+            "channelName": "isac-pj",
+            "log": {
+                "channel": "848497496179081258",
+                "embedTitle": "Játékos Jelentés Ticket Log",
+                "embedColor": "#a0a0a0"
+            },
+            "initialization": {
+                "channel": "847863763344162856",
+                "embed": {
+                    "title": "Játékos Jelentés",
+                    "color": "#a0a0a0",
+                    "body": "Ha szabályszegőt észleltél szervereinken, nyiss egy jegyet.\nA lenti gombra kattintva tudsz új jegyet kérni."
+                },
+                "blacklistedRoles": [
+                    "731867990542385283"
+                ],
+                "emoji": "exclamation"
+            },
+            "creation": {
+                "pingRoles": [
+                    "846416347378090003",
+                    "617771117985398815",
+                    "572146591499157539"
+                ],
+                "pingRolesHidden": [],
+                "rolesWithAccess": [
+                    "846416347378090003",
+                    "617771117985398815",
+                    "572146591499157539",
+                    "739583249721851905"
+                ],
+                "embed": {
+                    "title": "Játékos Jelentés",
+                    "body": "Egy Staff Tag hamarosan segít neked!",
+                    "color": "#2ECC71"
+                },
+                "description": "Szabályszegők jelentése"
+            }
+        },
+        {
+            "id": "pk",
+            "channelName": "isac-pk",
+            "log": {
+                "channel": "879729581408530432",
+                "embedTitle": "Panaszkönyv Ticket Log",
+                "embedColor": "#ff0000"
+            },
+            "initialization": {
+                "channel": "876726171671339048",
+                "embed": {
+                    "title": "Panaszkönyv",
+                    "color": "#ff0000",
+                    "body": "Panaszt szeretnél tenni egy Staff Tagra?\nA lenti gombra kattintva tudsz új jegyet kérni."
+                },
+                "blacklistedRoles": [
+                    "731867990542385283"
+                ],
+                "emoji": "despise"
+            },
+            "creation": {
+                "pingRoles": [
+                    "846448550853214208",
+                    "846416347378090003",
+                    "693234232759156817",
+                    "681911800060837953",
+                    "617771117985398815",
+                    "572146591499157539"
+                ],
+                "pingRolesHidden": [],
+                "rolesWithAccess": [
+                    "848154640566321162",
+                    "846448550853214208",
+                    "846416347378090003",
+                    "739583249721851905",
+                    "693234232759156817",
+                    "681911800060837953",
+                    "617771117985398815",
+                    "572146591499157539"
+                ],
+                "embed": {
+                    "title": "Panaszkönyv",
+                    "body": "Egy Staff Tag hamarosan segít neked!",
+                    "color": "#2ECC71"
+                },
+                "description": "Unban-kérelmek, Staff Taggal kapcsolatos probléma, meccs közben előforduló probléma (pl. kiestél a mapból)"
+            }
+        },
+        {
+            "id": "pl",
+            "channelName": "isac-pl",
+            "log": {
+                "channel": "1038435771234914335",
+                "embedTitle": "Plugin Hiba Ticket Log",
+                "embedColor": "#ff00ff"
+            },
+            "initialization": {
+                "channel": "1038426191251652628",
+                "embed": {
+                    "title": "Plugin Hibák",
+                    "body": "Hibát észleltél az egyik pluginnal kapcsolatban <@&811186557084106762>-en?\nA lenti gombra kattintva tudsz új jegyet kérni és jelenteni.",
+                    "color": "#ff00ff"
+                },
+                "blacklistedRoles": [],
+                "emoji": "gear"
+            },
+            "creation": {
+                "pingRoles": [
+                    "847896781093863514",
+                    "818914190009827338"
+                ],
+                "pingRolesHidden": [],
+                "rolesWithAccess": [
+                    "847896781093863514",
+                    "818914190009827338",
+                    "739583249721851905"
+                ],
+                "embed": {
+                    "title": "Plugin Hiba",
+                    "body": "Egy Plugin Creator hamarosan segíteni fog neked!",
+                    "color": "#ff00ff"
+                },
+                "description": "Pluginok nem megfelelő működése"
+            },
+            "tempDisable": false
+        }
+    ],
+    "suggestions": {
+        "trackedChannels": [
+            "1060196403659411466"
+        ],
+        "logChannel": "1060196543682060290",
+        "responseChannel": "1060196435099930686",
+        "reactions": {
+            "accepted": "check",
+            "denied": "deny",
+            "neutral": "neutral",
+            "inProgress": "progress"
+        }
+    },
+    "sanctionSystem": {
+        "oldVerification": {
+            "enabled": true,
+            "bans": "846389858304786462",
+            "warnings": "931840550791942174",
+            "ageChecks": "926082135532642384",
+            "wantedIndividuals": "1060227209714991165",
+            "sendTo": "1094179129403904020"
+        },
+        "permittedRoles": [
+            "846416347378090003",
+            "617771117985398815",
+            "572146591499157539"
+        ],
+        "logCreationChannel": "1094179701397925983",
+        "banLogChannel": "1094178899044343848",
+        "warnLogChannel": "1094178936549818378",
+        "ageCheckChannel": "1094178971509346334",
+        "wantedIndividualsChannel": "1094178953817772073",
+        "deleteOverrideRoles": [
+            "572146591499157539"
+        ],
+        "deletionLog": "1094180160900694098"
+    },
+    "roleManagement": [
+        {
+            "staffRole": "572146591499157539",
+            "manageRoles": [
+                "847928882853052466",
+                "720257062201983076"
+            ]
+        },
+        {
+            "staffRole": "681911800060837953",
+            "manageRoles": [
+                "861279558455001113",
+                "745358529908441089"
+            ]
+        },
+        {
+            "staffRole": "846448550853214208",
+            "manageRoles": [
+                "861279558455001113",
+                "745358529908441089"
+            ]
+        },
+        {
+            "staffRole": "693234232759156817",
+            "manageRoles": [
+                "861279558455001113",
+                "847928882853052466",
+                "745358529908441089",
+                "720257062201983076"
+            ]
+        },
+        {
+            "staffRole": "818914190009827338",
+            "manageRoles": [
+                "720257062201983076",
+                "847928882853052466"
+            ]
+        }
+    ],
+    "commandPermissions": [
+        {
+            "command": "mute",
+            "permissions": [
+                "681911800060837953",
+                "846448550853214208",
+                "693234232759156817"
+            ]
+        },
+        {
+            "command": "clear",
+            "permissions": [
+                "681911800060837953",
+                "846448550853214208",
+                "693234232759156817"
+            ]
+        },
+        {
+            "command": "giverole",
+            "permissions": [
+                "818914190009827338",
+                "681911800060837953",
+                "846448550853214208",
+                "693234232759156817",
+                "572146591499157539"
+            ]
+        },
+        {
+            "command": "history",
+            "permissions": [
+                "617771117985398815",
+                "846416347378090003",
+                "572146591499157539"
+            ]
+        },
+        {
+            "command": "info",
+            "permissions": true
+        },
+        {
+            "command": "listissued",
+            "permissions": [
+                "617771117985398815",
+                "846416347378090003",
+                "572146591499157539"
+            ]
+        },
+        {
+            "command": "redirect",
+            "permissions": [
+                "818914190009827338",
+                "739474810249281646",
+                "847896781093863514",
+                "693234232759156817",
+                "846448550853214208",
+                "681911800060837953",
+                "572146591499157539",
+                "846416347378090003",
+                "617771117985398815"
+            ]
+        },
+        {
+            "command": "removerole",
+            "permissions": [
+                "818914190009827338",
+                "693234232759156817",
+                "846448550853214208",
+                "681911800060837953",
+                "572146591499157539"
+            ]
+        },
+        {
+            "command": "serverinfo",
+            "permissions": true
+        },
+        {
+            "command": "ticket-add",
+            "permissions": [
+                "818914190009827338",
+                "693234232759156817",
+                "572146591499157539"
+            ]
+        },
+        {
+            "command": "ticket-close",
+            "permissions": [
+                "818914190009827338",
+                "739474810249281646",
+                "847896781093863514",
+                "572146591499157539",
+                "846416347378090003",
+                "617771117985398815",
+                "693234232759156817",
+                "846448550853214208",
+                "681911800060837953"
+            ]
+        },
+        {
+            "command": "unmute",
+            "permissions": [
+                "693234232759156817",
+                "846448550853214208",
+                "681911800060837953"
+            ]
+        },
+        {
+            "command": "wanted",
+            "permissions": [
+                "572146591499157539",
+                "846416347378090003",
+                "617771117985398815"
+            ]
+        },
+        {
+            "command": "userinfo",
+            "permissions": true
+        },
+        {
+            "command": "ticket-remove",
+            "permissions": [
+                "818914190009827338",
+                "572146591499157539",
+                "693234232759156817"
+            ]
+        }
+    ]
+}

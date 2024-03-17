@@ -1,0 +1,65 @@
+commit a36c1bbe2d5479d50296a9e1d6010803f05daaf1
+Author: Axwabo <axwabo@gmail.com>
+Date:   Sun Apr 16 13:39:06 2023 +0200
+
+    fix already replied
+
+diff --git a/src/commands/listIssued.ts b/src/commands/listIssued.ts
+index a10b4c1..340a4da 100644
+--- a/src/commands/listIssued.ts
++++ b/src/commands/listIssued.ts
+@@ -30,7 +30,8 @@ export default class ListIssued extends CommandBase {
+         if (sanctions.length === 0) {
+             await command.reply({
+                 content: `${(userMention(user))} még nem jegyzett fel szankciót.`,
+-                allowedMentions: { users: [] }
++                allowedMentions: { users: [] },
++                ephemeral: true
+             });
+             return;
+         }
+diff --git a/src/index.ts b/src/index.ts
+index 180d31a..ebe9108 100644
+--- a/src/index.ts
++++ b/src/index.ts
+@@ -92,8 +92,8 @@ async function onReady() {
+ }
+ 
+ client.on("guildMemberAdd", async member => {
+-    await sendJoinMessage(member)
+-    await nameFilter(member)
++    await sendJoinMessage(member);
++    await nameFilter(member);
+ });
+ 
+ client.on("messageCreate", async message => {
+diff --git a/src/modules/sanctionSystem/sanctionReader.ts b/src/modules/sanctionSystem/sanctionReader.ts
+index 6cfd06b..b921eff 100644
+--- a/src/modules/sanctionSystem/sanctionReader.ts
++++ b/src/modules/sanctionSystem/sanctionReader.ts
+@@ -191,7 +191,7 @@ export async function acceptSanction(interaction: ButtonInteraction, channelID:
+     const channel = textChannel(channelID);
+     if (!channel) {
+         logError(`SanctionVerifyUpload: cannot find channel ${channelID}!`);
+-        await reply(interaction, "Feltöltés nem lehetséges: nem található a szankció csatornája!");
++        await interaction.editReply("Feltöltés nem lehetséges: nem található a szankció csatornája!");
+         return;
+     }
+ 
+@@ -200,7 +200,7 @@ export async function acceptSanction(interaction: ButtonInteraction, channelID:
+         msg = await channel.messages.fetch(messageID);
+     } catch (e) {
+         logError(`SanctionVerifyUpload: cannot find message ${messageID} in channel ${channelID}!`);
+-        await reply(interaction, `Feltöltés nem lehetséges: nem található a szankció üzenete! ${channelMention(channelID)}`);
++        await interaction.editReply(`Feltöltés nem lehetséges: nem található a szankció üzenete! ${channelMention(channelID)}`);
+         return;
+     }
+ 
+@@ -216,6 +216,7 @@ export async function acceptSanction(interaction: ButtonInteraction, channelID:
+     if (success)
+         try {
+             await msg.delete();
++            await interaction.message.delete();
+         } catch (e) {
+             logError(`SanctionVerifyUpload: cannot delete message ${messageID} in channel ${channelID}!`);
+             response += `\nTörlés nem lehetséges: nem található a szankció üzenete! ${channelMention(channelID)}`;

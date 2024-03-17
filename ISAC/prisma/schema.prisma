@@ -1,0 +1,62 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "mysql"
+    url      = env("DATABASE_URL")
+}
+
+model ticketLog {
+    id  Int    @id @default(autoincrement())
+    log String @db.LongText
+}
+
+model mutes {
+    user           String @id @db.VarChar(32)
+    mutedBy        String @db.VarChar(32)
+    expires        String @db.VarChar(32)
+    messageContent String @db.Text
+    embed          String @db.TinyText
+}
+
+model bans {
+    banId    Int    @id @default(autoincrement())
+    steamId  String @db.VarChar(32)
+    nickname String @db.VarChar(32)
+    IP       String @db.VarChar(32)
+    bannedBy String @db.VarChar(32)
+    created  String @db.VarChar(32)
+    duration Int    @db.Int
+    servers  String @db.VarChar(128)
+    reason   String @db.Text
+}
+
+model warnings {
+    warnId   Int    @id @default(autoincrement())
+    steamId  String @db.VarChar(32)
+    nickname String @db.VarChar(32)
+    IP       String @db.VarChar(32)
+    warnedBy String @db.VarChar(32)
+    created  String @db.VarChar(32)
+    servers  String @db.VarChar(128)
+    reason   String @db.Text
+}
+
+model ageChecks {
+    checkId             Int    @id @default(autoincrement())
+    apparentDateOfBirth String @db.VarChar(32)
+    steamId             String @db.VarChar(32)
+    nickname            String @db.VarChar(32)
+    checkedBy           String @db.VarChar(32)
+    created             String @db.VarChar(32)
+}
+
+model wantedIndividuals {
+    entryId   Int    @id @default(autoincrement())
+    issuer    String @db.VarChar(32)
+    nickname  String @db.VarChar(32)
+    servers   String @db.VarChar(128)
+    reason    String @db.Text
+    created   String @db.VarChar(32)
+}
